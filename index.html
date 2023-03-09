@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AUUM Vidyalaya</title>
+	<style>
+    @media screen and (max-width: 768px) {
+  /* CSS rules for small screens */
+}
+
+		/* Reset */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		/* Fonts */
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			color: #333;
+		}
+
+		/* Header */
+ .logo-container {
+  	background: url('https://scontent.frdp3-1.fna.fbcdn.net/v/t1.6435-9/118433951_167204934965745_3983727508431148840_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KzVs_XM32MMAX_euzj8&_nc_ht=scontent.frdp3-1.fna&oh=00_AfD4MIh8aLbk8ztOmEC45-hRBt5_F4_fIfBl-fSKBnD_BA&oe=6430AC72') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff; /* replace with your desired background color */
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+      #header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #04f5fd;
+      }
+
+      #header h1 {
+        margin: 0;
+        color: white;
+      }
+
+		/* Main */
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 40px;
+		}
+
+		.banner {
+			height: 400px;
+			background: url('https://scontent.frdp3-1.fna.fbcdn.net/v/t31.18172-8/964409_107443546132771_1296694024_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=Wjt1ke1PCHwAX_BR7aF&_nc_ht=scontent.frdp3-1.fna&oh=00_AfB2tP9cGnNQYV-NHyOXKl-sL84GRcPEVitQmse3oGghUw&oe=6430CB89') no-repeat center center/cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 36px;
+			color: #fff;
+			text-align: center;
+			text-shadow: 2px 2px #333;
+		}
+
+		.about {
+			padding: 40px;
+			background-color: #fff;
+			color: #333;
+		}
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.info {
+  flex: 2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px ;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.image {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.info {
+  flex: 2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.info {
+  flex: 2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.gallery {
+  background-color: #0ef7bd;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  border:2px solid #0f1011;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.col {
+  flex: 1;
+  margin: 0 10px;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+figure:hover img {
+  transform: scale(1.1);
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+ .admission {
+  border:2px solid #0f1011;
+  background-color: #04f5fd;
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.admission-title {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.admission-text {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.admission-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.admission-btn:hover {
+  background-color: #0062cc;
+}
+
+
+.notice-board {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #09f1de;
+  border:2px solid #0f1011;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.notice {
+  background-color: #0bd8f3;
+  border: 1px solid #0d58fa;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+
+}
+
+.notice-title {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.notice-content {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.notice-date {
+  font-size: 1rem;
+  color: #1d0303;
+}
+
+.contact-us{
+    border:2px solid #0f1011;
+    background-color: #04f5fd;
+    margin-bottom: 50px;
+}
+.contact-us h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.management-team {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.manager {
+  width: 250px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.manager img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .management-team {
+    justify-content: center;
+  }
+}
+
+.manager h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.manager p {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+
+		/* Footer */
+    footer {
+  background-color: #0edfee;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.contact-info .contact {
+  order: 1;
+}
+
+.contact-info .visit {
+  order: 2;
+}
+
+.fa-facebook-f {
+  color: #3b5998;
+}
+
+.mapouter {
+  position: relative;
+  text-align: center;
+  height: 150px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 150px;
+  width: 200px;
+}
+
+.gmap_canvas iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.facebook-link {
+  margin-top: 20px;
+}
+
+.facebook-link a {
+  display: block;
+  color: #3b5998;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+
+
+
+	</style>
+</head>
+<body>
+	<!-- Header -->
+    <header id="header">
+ <div class="logo-container">
+
+</div>
+        <h1>Agradwip Union Uchha Madhayamik Vidyalaya</h1>
+      </header>
+
+	<!-- Main -->
+	<main>
+		<section class="banner">
+			<h2>Welcome to AUUM Vidyalaya</h2>
+		</section>
+
+		<section id="about" class="about">
+			<h2>About Our School</h2>
+			<p>AUUM Vidyalaya is a government school located in the heart of the city. We are committed to providing quality education to our students and helping them achieve their full potential. Our experienced faculty members and dedicated staff work together to create a supportive and engaging learning environment.</p>
+		</section>
+
+<div class="section">
+  <div class="image">
+    <img src="https://source.unsplash.com/random" alt="Random Image">
+  </div>
+  <div class="info">
+    <h2>About Our Principal</h2>
+    <p>Our principal, Ms. Smith, has been a dedicated educator for over 20 years. She holds a master's degree in education and has a passion for helping students achieve their full potential. She leads our school with a strong commitment to academic excellence and a focus on creating a safe and inclusive learning environment for all students.</p>
+    <p>Under her leadership, our school has implemented innovative programs that have increased student engagement and improved academic performance. Ms. Smith is a strong advocate for student success and works closely with teachers and staff to ensure that every student receives the support they need to thrive.</p>
+    <p>We are proud to have Ms. Smith as our principal and grateful for her unwavering commitment to our school community.</p>
+  </div>
+  </div>
+
+<div class="section1">
+  <div class="info">
+    <h2>Managing Committee</h2>
+    <p>Our school's managing committee is responsible for overseeing the school's operations and ensuring that the school is meeting the needs of our students and community. The committee is made up of dedicated volunteers who bring a diverse range of skills and expertise to the table.</p>
+    <p>Under the guidance of our committee chair, Mr. Johnson, the committee works closely with the principal and staff to develop policies and procedures that promote academic excellence, student welfare, and a safe and inclusive learning environment.</p>
+    <p>We are grateful for the hard work and dedication of our managing committee, who play a vital role in the success of our school.</p>
+  </div>
+  <div class="image">
+    <img src="https://source.unsplash.com/random" alt="Random Image">
+  </div>
+</div>
+
+<div class="section3">
+  <div class="image">
+    <img src="https://source.unsplash.com/random" alt="Random Image">
+  </div>
+  <div class="info">
+    <h2>Vice Principal</h2>
+    <p>Our school's vice principal, Ms. Smith, is responsible for supporting the principal in overseeing the day-to-day operations of the school. Ms. Smith brings a wealth of experience to her role, having worked in education for over 20 years.</p>
+    <p>Ms. Smith is committed to ensuring that our students receive the best education possible and that they are prepared for success in college and beyond. She works closely with teachers and staff to develop innovative curricula and teaching methods that engage and challenge our students.</p>
+    <p>We are fortunate to have Ms. Smith as our vice principal and appreciate the dedication and hard work she brings to her role every day.</p>
+  </div>
+</div>
+
+<section class="gallery">
+  <h2>Gallery</h2>
+  <div class="image-grid">
+    <div class="row">
+      <div class="col">
+        <figure>
+          <img src="https://source.unsplash.com/random/400x400/?celebration" alt="Celebration Image">
+          <figcaption>Celebration</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure>
+          <img src="https://source.unsplash.com/random/400x400/?students" alt="Students Image">
+          <figcaption>Students</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure>
+          <img src="https://source.unsplash.com/random/400x400/?library" alt="Library Image">
+          <figcaption>Library</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <figure>
+          <img src="https://source.unsplash.com/random/400x400/?sports" alt="Sports Image">
+          <figcaption>Sports</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure>
+          <img src="https://source.unsplash.com/random/400x400/?classroom" alt="Classroom Image">
+          <figcaption>Classroom</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure>
+          <img src="https://source.unsplash.com/random/400x400/?science" alt="Science Image">
+          <figcaption>Science</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+        <section class="admission">
+            <h2 class="admission-title"><u>Admissions Open</u></h2>
+            <p class="admission-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur lacus eget ante varius ultrices. Fusce at tortor leo. Nunc tempor sapien id luctus suscipit.</p>
+            <a href="https://www.example.com/admission" class="admission-btn">Apply Now</a>
+          </section>
+          
+
+        <div class="notice-board">
+            <h2><u>Notice Bord</u></h2>
+            <div class="notice">
+              <h3 class="notice-title">Important Notice</h3>
+              <p class="notice-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur lacus eget ante varius ultrices.</p>
+              <p class="notice-date">Posted on: March 8, 2023</p>
+            </div>
+            <div class="notice">
+              <h3 class="notice-title">School Closure</h3>
+              <p class="notice-content">Due to inclement weather, the school will be closed on March 9th, 2023.</p>
+              <p class="notice-date">Posted on: March 8, 2023</p>
+            </div>
+            <div class="notice">
+              <h3 class="notice-title">PTA Meeting</h3>
+              <p class="notice-content">The next PTA meeting will be held on March 15th, 2023 at 6:00 pm in the school auditorium.</p>
+              <p class="notice-date">Posted on: March 8, 2023</p>
+            </div>
+             <div class="notice">
+              <h3 class="notice-title">Important Notice</h3>
+              <p class="notice-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur lacus eget ante varius ultrices.</p>
+              <p class="notice-date">Posted on: March 8, 2023</p>
+            </div>
+          </div>
+          
+        <section class="contact-us">
+            <h2><u>Contact Us</u></h2>
+            
+            <div class="contact-info">
+              <p>School Email: <a href="mailto:info@school.com">info@school.com</a></p>
+              <p>Phone Number: (123) 456-7890</p>
+              <p>Principal: John Smith</p>
+              <p>Principal's Email: <a href="mailto:jsmith@school.com">jsmith@school.com</a></p>
+              <p>Principal's Phone Number: (123) 456-7890</p>
+            </div>
+            
+            <div class="management-team">
+              
+              <div class="manager">
+                <img src="https://source.unsplash.com/random.jpg" alt="Manager 1">
+                <h4>Jane Doe</h4>
+                <p>Email: <a href="mailto:jdoe@school.com">jdoe@school.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+              </div>
+              
+              <div class="manager">
+                <img src="https://source.unsplash.com/random.jpg" alt="Manager 2">
+                <h4>John Doe</h4>
+                <p>Email: <a href="mailto:johndoe@school.com">johndoe@school.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+              </div>
+              
+              <div class="manager">
+                <img src="https://source.unsplash.com/random.jpg" alt="Manager 3">
+                <h4>Bob Smith</h4>
+                <p>Email: <a href="mailto:bsmith@school.com">bsmith@school.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+              </div>
+            </div>
+          </section>
+          
+	</main>
+
+	<!-- Footer -->
+<footer>
+  <div class="contact-info">
+    <div class="contact">
+      <h3>Contact Us</h3>
+      <p>123 Main St<br>Anytown, USA 12345<br>Phone: (555) 555-5555<br>Email: info@example.com</p>
+      <div class="facebook-link">
+        <a href="https://www.facebook.com/agradwipuumvidyalaya.hs">Follow us on Facebook</a>
+      </div>
+    </div>
+    <div class="visit">
+      <h3>Visit Us</h3>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193409.80241130162!2d-122.47884998805343!3d37.75781505804687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8e3f01d15c1b%3A0x20b31a27b23a6f0!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1615156880294!5m2!1sen!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+          
+ 
+</body>
+</html>
