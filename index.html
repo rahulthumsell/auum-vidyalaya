@@ -266,6 +266,51 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item img {
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+.caption {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px #000000;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
 .Infrastructure {
     margin-top: 50px;
     background-color: #04f5fd;
@@ -481,7 +526,7 @@ a:hover {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .contact,
@@ -590,7 +635,7 @@ a:hover {
       <li>
         <div class="notice-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
-          <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
+          <a href="https://wbbse.wb.gov.in/Web/PdfViewer?l=Mzgz" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
         </div>
       </li>
         <li>
@@ -632,7 +677,7 @@ a:hover {
     <img src="https://source.unsplash.com/random" alt="Random Image">
   </div>
   <div class="info">
-    <h2>About Our Principal</h2>
+    <h2>Principal/HeadMaster</h2>
     <p>Our principal, Ms. Smith, has been a dedicated educator for over 20 years. She holds a master's degree in education and has a passion for helping students achieve their full potential. She leads our school with a strong commitment to academic excellence and a focus on creating a safe and inclusive learning environment for all students.</p>
     <p>Under her leadership, our school has implemented innovative programs that have increased student engagement and improved academic performance. Ms. Smith is a strong advocate for student success and works closely with teachers and staff to ensure that every student receives the support they need to thrive.</p>
     <p>We are proud to have Ms. Smith as our principal and grateful for her unwavering commitment to our school community.</p>
@@ -656,7 +701,7 @@ a:hover {
     <img src="https://source.unsplash.com/random" alt="Random Image">
   </div>
   <div class="info">
-    <h2>Vice Principal</h2>
+    <h2>President</h2>
     <p>Our school's vice principal, Ms. Smith, is responsible for supporting the principal in overseeing the day-to-day operations of the school. Ms. Smith brings a wealth of experience to her role, having worked in education for over 20 years.</p>
     <p>Ms. Smith is committed to ensuring that our students receive the best education possible and that they are prepared for success in college and beyond. She works closely with teachers and staff to develop innovative curricula and teaching methods that engage and challenge our students.</p>
     <p>We are fortunate to have Ms. Smith as our vice principal and appreciate the dedication and hard work she brings to her role every day.</p>
@@ -710,6 +755,16 @@ a:hover {
   </div>
 </section>
 
+
+<div class="gallery-item">
+  <h1>Administration</h1>
+  <img id="gallery-img" src="https://source.unsplash.com/400x400/?principal">
+  <div class="caption">Teacher1</div>
+</div>
+<button onclick="nextImage()">Next</button>
+
+
+
 <section class="Infrastructure">
 <h1><u>Infrastructure</u></h1>
 	<table>
@@ -740,7 +795,6 @@ a:hover {
             
             <div class="contact-info">
               <p>School Email: <a href="mailto:info@school.com">info@school.com</a></p>
-              <p>Principal's Email: <a href="mailto:jsmith@school.com">jsmith@school.com</a></p>
             </div>
             
             <div class="management-team">
@@ -789,7 +843,31 @@ a:hover {
   </footer>
   
   
-          
+     
+<script>
+  var imageIndex = 0;
+  var imageUrls = [
+    {
+      url: "https://source.unsplash.com/400x400/?principal",
+      caption: "Teacher1"
+    },
+    {
+      url: "https://source.unsplash.com/400x400/?water",
+      caption: "Teacher2"
+    },
+    {
+      url: "https://source.unsplash.com/400x400/?sky",
+      caption: " Teacher3"
+    }
+  ];
+  
+  function nextImage() {
+    imageIndex = (imageIndex + 1) % imageUrls.length;
+    document.getElementById("gallery-img").src = imageUrls[imageIndex].url;
+    document.querySelector(".caption").innerHTML = imageUrls[imageIndex].caption;
+  }
+  
+    </script>     
  
 </body>
 </html>
