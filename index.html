@@ -4,24 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AUUM Vidyalaya</title>
-	<style>
-    @media screen and (max-width: 768px) {
-  /* CSS rules for small screens */
-}
-
-		/* Reset */
+ 	<style>
+     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+		/* Fonts */
+		body {
+      font-family: 'Raleway', sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			color: #333;
+		}
+    		/* Reset */
 		* {
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
-		}
-
-		/* Fonts */
-		body {
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.6;
-			color: #333;
 		}
 
 		/* Header */
@@ -78,6 +74,10 @@
 			background-color: #fff;
 			color: #333;
 		}
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
 
 h1 {
   text-align: center;
@@ -99,22 +99,66 @@ h1 {
   box-sizing: border-box;
 }
 
-h2 {
-  margin-top: 0;
-}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
 
-p {
-  margin-bottom: 10px;
-}
 
-a {
-  color: blue;
-  text-decoration: none;
-}
+  .notice-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
+  .notice-list li {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .notice-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .notice-list li img {
+    display: block;
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .notice-content {
+    padding: 10px;
+    background-color: #fff;
+    font-size: 0.9rem;
+  }
+
+  .notice-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .notice-link:hover {
+    background-color: #666;
+  }
+
+  .notice-link img {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
 
 .section {
   display: flex;
@@ -539,58 +583,48 @@ a:hover {
       </div>
     </div>
 
+<div class="Notice">
+     <h1>Notice Board</h1>
 
-         <h1><u>Notice Board</u></h1>
-    <ul>
+    <ul class="notice-list">
       <li>
-        <h4>School Closure Due to Inclement Weather - March 10, 2023</h4>
-        <a href="https://schoolwebsite.com/inclement-weather-closure">Learn More</a>
+        <div class="notice-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
+          <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
+        </div>
       </li>
-      <li>
-        <h4>Parent-Teacher Conference Schedule - March 15-16, 2023</h4>
-        <a href="https://schoolwebsite.com/parent-teacher-conferences">Learn More</a>
-      </li>
-      <li>
-        <h4>Spring Break Dates - April 2-9, 2023</h4>
-        <a href="https://schoolwebsite.com/spring-break-dates">Learn More</a>
-      </li>
-      <li>
-        <h4>Book Fair - April 12-15, 2023</h4>
-        <a href="https://schoolwebsite.com/book-fair">Learn More</a>
-      </li>
-      <li>
-        <h4>School Play Auditions - April 20, 2023</h4>
-        <a href="https://schoolwebsite.com/school-play-auditions">Learn More</a>
-      </li>
-      <li>
-        <h4>PTA Meeting - April 27, 2023</h4>
-        <a href="https://schoolwebsite.com/pta-meeting">Learn More</a>
-      </li>
-      <li>
-        <h4>School Closure Due to Inclement Weather - March 10, 2023</h4>
-        <a href="https://schoolwebsite.com/inclement-weather-closure">Learn More</a>
-      </li>
-      <li>
-        <h4>Parent-Teacher Conference Schedule - March 15-16, 2023</h4>
-        <a href="https://schoolwebsite.com/parent-teacher-conferences">Learn More</a>
-      </li>
-      <li>
-        <h4>Spring Break Dates - April 2-9, 2023</h4>
-        <a href="https://schoolwebsite.com/spring-break-dates">Learn More</a>
-      </li>
-      <li>
-        <h4>Book Fair - April 12-15, 2023</h4>
-        <a href="https://schoolwebsite.com/book-fair">Learn More</a>
-      </li>
-      <li>
-        <h4>School Play Auditions - April 20, 2023</h4>
-        <a href="https://schoolwebsite.com/school-play-auditions">Learn More</a>
-      </li>
-      <li>
-        <h4>PTA Meeting - April 27, 2023</h4>
-        <a href="https://schoolwebsite.com/pta-meeting">Learn More</a>
-      </li>
+        <li>
+          <div class="notice-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
+            <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
+          </div>
+        </li>
+        <li>       
+          <div class="notice-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
+            <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
+          </div>
+        </li>
+          <li>
+            <div class="notice-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
+              <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
+            </div>
+          </li>
+          <li>
+            <div class="notice-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
+              <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
+            </div>
+          </li>
+            <li>
+              <div class="notice-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
+                <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
+              </div>
+            </li>
     </ul>
+</div>
 
 
 <div class="section">
@@ -738,7 +772,7 @@ a:hover {
     <div class="contact-info">
       <div class="contact">
         <h3>Contact Us</h3>
-        <p>123 Main St<br>Anytown, USA 12345<br>Phone: (555) 555-5555<br>Email: info@example.com</p>
+        <p>Agradwip(R.S)<br>Katwa,713502<br>Phone: (555) 555-5555<br>Email: info@example.com</p>
         <div class="facebook-link">
           <a href="https://www.facebook.com/agradwipuumvidyalaya.hs">Follow us on Facebook</a>
         </div>
@@ -747,8 +781,8 @@ a:hover {
         <h3>Visit Us</h3>
         <div class="mapouter">
           <div class="gmap_canvas">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193409.80241130162!2d-122.47884998805343!3d37.75781505804687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8e3f01d15c1b%3A0x20b31a27b23a6f0!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1615156880294!5m2!1sen!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.3078840230567!2d88.22755835790225!3d23.582239454379074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f90972d3b28403%3A0xb18b3d07449e4081!2sAgradwip%20U%20U%20M%20Vidyalaya%20HS%20%2Cmain%20building!5e0!3m2!1sen!2sin!4v1678418193299!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
       </div>
     </div>
