@@ -6,6 +6,7 @@
 	<title>AUUM Vidyalaya</title>
  	<style>
      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 		/* Fonts */
 		body {
       font-family: 'Raleway', sans-serif;
@@ -21,34 +22,60 @@
 		}
 
 		/* Header */
- .logo-container {
-  	background: url('https://scontent.frdp3-1.fna.fbcdn.net/v/t1.6435-9/118433951_167204934965745_3983727508431148840_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KzVs_XM32MMAX_euzj8&_nc_ht=scontent.frdp3-1.fna&oh=00_AfD4MIh8aLbk8ztOmEC45-hRBt5_F4_fIfBl-fSKBnD_BA&oe=6430AC72') no-repeat center center/cover;
+
+    header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fff; /* replace with your desired background color */
+  padding: auto;
+  background-color: #0dc1f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  max-width: 100%;
-  max-height: 100%;
+.logo-container {
+  background: url('https://scontent.frdp3-1.fna.fbcdn.net/v/t1.6435-9/118433951_167204934965745_3983727508431148840_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KzVs_XM32MMAX_euzj8&_nc_ht=scontent.frdp3-1.fna&oh=00_AfD4MIh8aLbk8ztOmEC45-hRBt5_F4_fIfBl-fSKBnD_BA&oe=6430AC72') no-repeat center center/cover;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+}
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 8px;
+  background-color: white;
+    padding: 10px;
+    margin: 10px 1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
 }
 
 
-      #header {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        background-color: #04f5fd;
-      }
+nav button {
+  border: none;
+  background-color: transparent;
+  color: #333333;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-      #header h1 {
-        margin: 0;
-        color: white;
-      }
+nav button:hover {
+  color: #fdfcfc;
+}
 
 		/* Main */
 		main {
@@ -68,6 +95,9 @@
 			text-align: center;
 			text-shadow: 2px 2px #333;
 		}
+    .banner h2{
+      color: white;
+    }
 
 		.about {
 			padding: 40px;
@@ -140,7 +170,7 @@ h1 {
 
   .notice-link {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 3px;
     padding: 5px 10px;
     background-color: #333;
     color: #fff;
@@ -266,50 +296,26 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.gallery-item {
-  position: relative;
-}
 
-.gallery-item img {
-  display: block;
-  margin: 0 auto;
-  height: 300px;
-  width: 300px;
-}
-h1 {
-    text-align: center;
-    color: #333;
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-
-.caption {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  text-shadow: 1px 1px #000000;
-}
-
-button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0062cc;
-}
+		.teacher-container {
+			text-align: center;
+			margin: 0 auto;
+			max-width: 800px;
+		}
+		.teacher {
+			display: inline-block;
+			margin: 2px;
+			width: 80px;
+			height: 80px;
+			background-color: #eee;
+			border-radius: 0;
+			overflow: hidden;
+		}
+		.teacher img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 
 .Infrastructure {
     margin-top: 50px;
@@ -442,6 +448,57 @@ a:hover {
   text-decoration: underline;
 }
 
+
+.success h2 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+h2{
+  color: black;
+  margin-bottom: 10px;
+  left: 50%;
+}
+    #success-stories {
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #f2f2f2;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      grid-gap: 30px;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+
+    
+    .success-story {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .success-story img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    
+    .success-story h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .success-story p {
+      font-size: 16px;
+      line-height: 1.5;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #666;
+    }
+
 .contact-us{
     border:2px solid #0f1011;
     background-color: #04f5fd;
@@ -518,7 +575,7 @@ a:hover {
 		/* Footer */
     footer {
   background-color: #0bd4f8;
-  padding: 50px 0;
+  padding: 0px 0;
 }
 
 .contact-info {
@@ -589,12 +646,24 @@ a:hover {
 </head>
 <body>
 	<!-- Header -->
-    <header id="header">
- <div class="logo-container">
-
-</div>
-        <h1>Agradwip Union Uchha Madhayamik Vidyalaya</h1>
-      </header>
+  <section id="home">
+	<header>
+		<div class="logo-container">
+		</div>
+		<h1>Agradwip Union Uchha Madhayamik Vidyalaya</h1>
+		<nav>
+		  <ul>
+        <li><button onclick="scrollToSection('home')">Home</button></li>
+        <li><button onclick="scrollToSection('Important')">Important News</button></li>
+			<li><button onclick="scrollToSection('notice')">Notice</button></li>
+			<li><button onclick="scrollToSection('Infrastructure')">Infrastructure</button></li>
+      <li><button onclick="scrollToSection('success-stories')">Success Stories</button></li>
+			<li><button onclick="scrollToSection('contact')">Contact Us</button></li>
+			
+		  </ul>
+		</nav>
+	  </header>
+  </section>
 
 	<!-- Main -->
 	<main>
@@ -608,45 +677,48 @@ a:hover {
 		</section>
 
 
-
+    <section id="Important"> 
     <h1><u>Important News</u></h1>
     <div class="news-container">
       <div class="news-item">
-        <h3>Breaking News: Major Earthquake Strikes the Region</h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mauris id tortor congue dapibus. Sed sed ex et felis interdum tincidunt. Vestibulum nec leo vel erat tristique volutpat eu at ipsum. Nam bibendum nisl a turpis lacinia, et euismod orci consectetur.</p>
+        <h3>আমার সোনার বাংলা। আমি তোমায় ভালোবাসি।</h3>
+        <p>বাংলায় একটি প্যারাগ্রাফ লেখতে চাই। বাংলা হল ভারত এবং বাংলাদেশের একটি মুখ্য ভাষা। এটি উচ্চারণ, ব্যকরণ এবং বাক্য গঠনে খুব সুন্দর। বাংলা ভাষার সংস্কৃতি খুব প্রাচীন এবং সমৃদ্ধ। এটি সমস্ত প্রান্তে প্রচলিত এবং একটি মহান সাহিত্য রচনার ভাষা। বাংলা ভাষায় উপন্যাস, কবিতা, গান, নাটক, মহাকাব্য এবং প্রবন্ধ লিখা হয়।</p>
         <a href="#">Read More</a>
       </div>
       <div class="news-item">
-        <h3>Update: COVID-19 Vaccine Now Available for General Public</h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mauris id tortor congue dapibus. Sed sed ex et felis interdum tincidunt. Vestibulum nec leo vel erat tristique volutpat eu at ipsum. Nam bibendum nisl a turpis lacinia, et euismod orci consectetur.</p>
+        <h3>আমার সোনার বাংলা। আমি তোমায় ভালোবাসি।</h3>
+        <p>বাংলায় একটি প্যারাগ্রাফ লেখতে চাই। বাংলা হল ভারত এবং বাংলাদেশের একটি মুখ্য ভাষা। এটি উচ্চারণ, ব্যকরণ এবং বাক্য গঠনে খুব সুন্দর। বাংলা ভাষার সংস্কৃতি খুব প্রাচীন এবং সমৃদ্ধ। এটি সমস্ত প্রান্তে প্রচলিত এবং একটি মহান সাহিত্য রচনার ভাষা। বাংলা ভাষায় উপন্যাস, কবিতা, গান, নাটক, মহাকাব্য এবং প্রবন্ধ লিখা হয়।</p>
         <a href="#">Read More</a>
       </div>
       <div class="news-item">
-        <h3>Local Elections Results: New Mayor Elected</h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mauris id tortor congue dapibus. Sed sed ex et felis interdum tincidunt. Vestibulum nec leo vel erat tristique volutpat eu at ipsum. Nam bibendum nisl a turpis lacinia, et euismod orci consectetur.</p>
+        <h3>আমার সোনার বাংলা। আমি তোমায় ভালোবাসি।</h3>
+        <p>বাংলায় একটি প্যারাগ্রাফ লেখতে চাই। বাংলা হল ভারত এবং বাংলাদেশের একটি মুখ্য ভাষা। এটি উচ্চারণ, ব্যকরণ এবং বাক্য গঠনে খুব সুন্দর। বাংলা ভাষার সংস্কৃতি খুব প্রাচীন এবং সমৃদ্ধ। এটি সমস্ত প্রান্তে প্রচলিত এবং একটি মহান সাহিত্য রচনার ভাষা। বাংলা ভাষায় উপন্যাস, কবিতা, গান, নাটক, মহাকাব্য এবং প্রবন্ধ লিখা হয়।</p>
         <a href="#">Read More</a>
       </div>
     </div>
+    </section>
 
+
+    <section id="notice"> 
 <div class="Notice">
      <h1>Notice Board</h1>
 
     <ul class="notice-list">
       <li>
         <div class="notice-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
-          <a href="https://wbbse.wb.gov.in/Web/PdfViewer?l=Mzgz" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
+          <p>বাংলায় একটি প্যারাগ্রাফ লেখতে চাই। বাংলা হল ভারত এবং বাংলাদেশের একটি মুখ্য ভাষা। এটি উচ্চারণ, ব্যকরণ এবং বাক্য গঠনে খুব সুন্দর। বাংলা ভাষার সংস্কৃতি খুব প্রাচীন এবং সমৃদ্ধ। এটি সমস্ত প্রান্তে প্রচলিত এবং একটি মহান সাহিত্য রচনার ভাষা। বাংলা ভাষায় উপন্যাস, কবিতা, গান, নাটক, মহাকাব্য এবং প্রবন্ধ লিখা হয়।</p>
+          <a href="https://wbbse.wb.gov.in/Web/PdfViewer?l=Mzgz" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon"></a>
         </div>
       </li>
         <li>
           <div class="notice-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
+            <p>বাংলায় একটি প্যারাগ্রাফ লেখতে চাই। বাংলা হল ভারত এবং বাংলাদেশের একটি মুখ্য ভাষা। এটি উচ্চারণ, ব্যকরণ এবং বাক্য গঠনে খুব সুন্দর। বাংলা ভাষার সংস্কৃতি খুব প্রাচীন এবং সমৃদ্ধ। এটি সমস্ত প্রান্তে প্রচলিত এবং একটি মহান সাহিত্য রচনার ভাষা। বাংলা ভাষায় উপন্যাস, কবিতা, গান, নাটক, মহাকাব্য এবং প্রবন্ধ লিখা হয়।</p>
             <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
           </div>
         </li>
         <li>       
           <div class="notice-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem at aliquet. Morbi bibendum imperdiet libero, sed posuere magna vulputate sit amet.</p>
+            <p>বাংলায় একটি প্যারাগ্রাফ লেখতে চাই। বাংলা হল ভারত এবং বাংলাদেশের একটি মুখ্য ভাষা। এটি উচ্চারণ, ব্যকরণ এবং বাক্য গঠনে খুব সুন্দর। বাংলা ভাষার সংস্কৃতি খুব প্রাচীন এবং সমৃদ্ধ। এটি সমস্ত প্রান্তে প্রচলিত এবং একটি মহান সাহিত্য রচনার ভাষা। বাংলা ভাষায় উপন্যাস, কবিতা, গান, নাটক, মহাকাব্য এবং প্রবন্ধ লিখা হয়।</p>
             <a href="https://example.com/notice.pdf" class="notice-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/640px-PDF_file_icon.svg.png" alt="PDF Icon">Download Notice</a>
           </div>
         </li>
@@ -670,14 +742,14 @@ a:hover {
             </li>
     </ul>
 </div>
-
+    </section>
 
 <div class="section">
   <div class="image">
     <img src="https://source.unsplash.com/random" alt="Random Image">
   </div>
   <div class="info">
-    <h2>Principal/HeadMaster</h2>
+    <h2>Principal/Headmaster</h2>
     <p>Our principal, Ms. Smith, has been a dedicated educator for over 20 years. She holds a master's degree in education and has a passion for helping students achieve their full potential. She leads our school with a strong commitment to academic excellence and a focus on creating a safe and inclusive learning environment for all students.</p>
     <p>Under her leadership, our school has implemented innovative programs that have increased student engagement and improved academic performance. Ms. Smith is a strong advocate for student success and works closely with teachers and staff to ensure that every student receives the support they need to thrive.</p>
     <p>We are proud to have Ms. Smith as our principal and grateful for her unwavering commitment to our school community.</p>
@@ -756,15 +828,146 @@ a:hover {
 </section>
 
 
-<div class="gallery-item">
-  <h1>Administration</h1>
-  <img id="gallery-img" src="https://source.unsplash.com/400x400/?principal">
-  <div class="caption">Teacher1</div>
+<h1>Faculties</h1>
+<div class="teacher-container">
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 1">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 2">
+  </div>
+  <div class="teacher">
+    <img src="https://source.unsplash.com/random" alt="Teacher 3">
+  </div>
+  <!-- Add more teacher images here -->
+  <!-- Use a unique "alt" attribute for each image -->
+  <!-- Use the same "class" attribute for each teacher "div" -->
+  <!-- Change the "src" attribute to the URL of your own image -->
 </div>
-<button onclick="nextImage()">Next</button>
-
-
-
+<section id="Infrastructure">
 <section class="Infrastructure">
 <h1><u>Infrastructure</u></h1>
 	<table>
@@ -790,6 +993,108 @@ a:hover {
 		</tr>
 	</table>
 </section>
+</section>
+
+<div class="success">
+  <center><h2><u>Success Story</u></h2></center>
+</div>
+
+<section id="success-stories">
+
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>John Doe</h3>
+    <p>Senior Software Engineer at Acme Corp</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Jane Smith</h3>
+    <p>Founder and CEO of Smith Marketing</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Bob Johnson</h3>
+    <p>Cardiothoracic Surgeon at XYZ Hospital</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Samantha Lee</h3>
+    <p>Elementary School Teacher at Maple</p>
+  </div>
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>John Doe</h3>
+    <p>Senior Software Engineer at Acme Corp</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Jane Smith</h3>
+    <p>Founder and CEO of Smith Marketing</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Bob Johnson</h3>
+    <p>Cardiothoracic Surgeon at XYZ Hospital</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Samantha Lee</h3>
+    <p>Elementary School Teacher at Maple</p>
+  </div>
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>John Doe</h3>
+    <p>Senior Software Engineer at Acme Corp</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Jane Smith</h3>
+    <p>Founder and CEO of Smith Marketing</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Bob Johnson</h3>
+    <p>Cardiothoracic Surgeon at XYZ Hospital</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Samantha Lee</h3>
+    <p>Elementary School Teacher at Maple Elementary</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Jane Smith</h3>
+    <p>Founder and CEO of Smith Marketing</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Bob Johnson</h3>
+    <p>Cardiothoracic Surgeon at XYZ Hospital</p>
+  </div>
+  
+  <div class="success-story">
+    <img src="https://source.unsplash.com/random/100x100" alt="Success story image">
+    <h3>Samantha Lee</h3>
+    <p>Elementary School Teacher at Maple Elementary</p>
+  </div>
+  
+  <!-- Add more success stories here as needed -->
+  
+</section>
+
+<section id="contact"> 
         <section class="contact-us">
             <h2><u>Contact Us</u></h2>
             
@@ -818,7 +1123,7 @@ a:hover {
               </div>
             </div>
           </section>
-          
+</section>
 	</main>
 
 	<!-- Footer -->
@@ -841,33 +1146,13 @@ a:hover {
       </div>
     </div>
   </footer>
-  
-  
-     
-<script>
-  var imageIndex = 0;
-  var imageUrls = [
-    {
-      url: "https://source.unsplash.com/400x400/?principal",
-      caption: "Teacher1"
-    },
-    {
-      url: "https://source.unsplash.com/400x400/?water",
-      caption: "Teacher2"
-    },
-    {
-      url: "https://source.unsplash.com/400x400/?sky",
-      caption: " Teacher3"
-    }
-  ];
-  
-  function nextImage() {
-    imageIndex = (imageIndex + 1) % imageUrls.length;
-    document.getElementById("gallery-img").src = imageUrls[imageIndex].url;
-    document.querySelector(".caption").innerHTML = imageUrls[imageIndex].caption;
+  <script>
+    function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({behavior: "smooth"});
   }
   
-    </script>     
+  </script>	 
  
 </body>
 </html>
